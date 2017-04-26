@@ -10,7 +10,7 @@
   "scripts": {
     "lint": "eslint .",
     "dist": "build",
-    "serve": "nodemon ./server.js",
+    "serve": "nodemon ./server.js --use-openssl-ca",
     "dev-pack": "webpack -d --env.target=web --hide-modules -w",
     "build-desktop": "webpack -p --env.target=electron --hide-modules",
     "build-web": "webpack -p --env.target=web --hide-modules",
